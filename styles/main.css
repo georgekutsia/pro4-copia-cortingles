@@ -1,1 +1,127 @@
-/*# sourceMappingURL=main.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header {
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.497);
+}
+.header-ul {
+  display: flex;
+  gap: 20px;
+}
+.header-ul li {
+  font-size: calc(10px + 0.5vw);
+}
+.header-ul .last-li {
+  font-size: calc(15px + 0.5vw);
+}
+.header-img {
+  width: 350px;
+}
+
+.main-nav {
+  background-color: white;
+}
+.main-nav ul {
+  padding: 0px 10%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: calc(10px + 0.3vw);
+}
+.main-nav-li {
+  display: block;
+  font-size: calc(10px + 0.1vw);
+  padding-top: 10px;
+  background-color: #69b400;
+  height: 50px;
+  width: 60px;
+  align-items: center;
+  text-align: center;
+  color: rgb(255, 255, 191);
+  border: 1px solid rgba(255, 255, 0, 0.372);
+}
+.main-nav-li i {
+  font-size: calc(24px + 0.5vw);
+}
+.main-offer {
+  padding: 20px 10%;
+  background-color: #efefef;
+  border-top: 1px solid rgba(128, 128, 128, 0.497);
+}
+.main-offer h4 {
+  color: rgb(92, 90, 90);
+}
+.main-offer h4 span {
+  color: #69b400;
+}
+.main-offer-gallery {
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.497);
+  display: flex;
+  gap: 20px;
+}
+.main-offer button {
+  margin-top: 15px;
+  background-color: #69b400;
+  border: 1px solid rgba(255, 255, 0, 0.372);
+  padding: 12px 15px;
+  font-size: calc(14px + 0.3vw);
+  color: rgb(255, 255, 191);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 0px 10%;
+  background-color: #efefef;
+}
+.gallery img {
+  width: 100%;
+}
+.gallery-card {
+  background-color: white;
+  width: 100%;
+  justify-items: center;
+  flex-wrap: wrap;
+}
+.gallery-card-noImgBox {
+  padding: 10px;
+}
+.gallery-card-noImgBox h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.gallery-card-noImgBox p {
+  letter-spacing: 1px;
+  color: rgb(64, 63, 63);
+}
+.gallery-card-price {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  color: #69b400;
+  align-items: flex-end;
+}
+.gallery-card-price-box h4 {
+  color: rgb(174, 171, 171);
+}
+.gallery-card-price-box h3 {
+  font-size: 40px;
+}
+.gallery-card-price button {
+  background-color: transparent;
+  margin: 10px 0px;
+  padding: calc(4px + 1%) calc(10px + 2%);
+  color: #69b400;
+  border-color: #69b400;
+}/*# sourceMappingURL=main.css.map */

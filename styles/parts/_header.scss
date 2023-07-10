@@ -1,0 +1,22 @@
+.header{
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $header-back-color;
+  border-bottom: 1px solid $border-color;
+
+  &-ul{
+    display: flex;
+    gap: 20px;
+    li{
+      font-size: calc(10px + 0.5vw);
+    }
+    .last-li{
+      font-size: calc(15px + 0.5vw);
+    }
+  }
+&-img{
+  width: 350px;
+}
+}

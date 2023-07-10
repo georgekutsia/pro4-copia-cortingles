@@ -1,0 +1,50 @@
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 0px 10%;
+    background-color: $main-back-color;
+
+  img {
+    width: 100%;
+  }
+  &-card {
+    background-color: $white;
+    width: 100%;
+    justify-items: center;
+    flex-wrap: wrap;
+    &-noImgBox{
+      padding: 10px;
+      h2{
+        font-size: 30px;
+        margin-bottom: 10px;
+      }
+      p{
+        letter-spacing: 1px;
+        color: rgb(64, 63, 63);
+      }
+    }
+    &-price {
+      margin-top: 60px;
+      display: flex;
+      justify-content: space-between;
+      color: $button-green;
+      align-items: flex-end;
+      &-box{
+        h4{
+          color: rgb(174, 171, 171);
+        }
+        h3{
+          font-size: 40px;
+        }
+      }
+      button{
+        background-color: transparent;
+        margin: 10px 0px;
+        padding: calc(4px + 1%) calc(10px + 2%);
+        color: $button-green;
+        border-color:  $button-green;
+      }
+    }
+  }
+}
