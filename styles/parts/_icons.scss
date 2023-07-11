@@ -1,0 +1,25 @@
+.icons{
+  background-color: $main-back-color;
+  &-ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 10%;
+    li{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 20px;
+      border-left:  3px solid $border-color;
+      width: 170px;
+      i{
+        font-size: calc(10px + 2vw);
+        color: $button-green;
+        margin-bottom: 20px;
+      }
+      h4{
+        font-size: calc(10px + 0.3vw);
+      }
+    }
+  }
+}

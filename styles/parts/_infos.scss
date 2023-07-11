@@ -1,0 +1,36 @@
+.info{
+  padding: 70px 10%;
+  background-color: $main-back-color;
+  &-img{
+    display: flex;
+    justify-content: space-between;
+  }
+  &-link{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    &-lines{
+      border-top: 3px solid $border-color;
+      width: 130px;
+      margin-top: 20px;
+    }
+    &-parts{
+      text-align: center;
+      h3{
+        color: $button-green;
+        font-size: calc(18px + 1vw);
+      }
+      ul{
+        line-height: 40px;
+        li{
+        font-size: calc(10px + 0.5vw);
+        }
+      }
+    }
+  }
+  .last-ul{
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+  }
+}

@@ -15,8 +15,10 @@
     flex-wrap: wrap;
     &-noImgBox{
       padding: 10px;
+      display: flex;
+      flex-direction: column;
       h2{
-        font-size: 30px;
+        font-size: calc(15px + 1vw);
         margin-bottom: 10px;
       }
       p{
@@ -25,12 +27,13 @@
       }
     }
     &-price {
-      margin-top: 60px;
       display: flex;
       justify-content: space-between;
       color: $button-green;
       align-items: flex-end;
+      margin-top: 65px;
       &-box{
+        
         h4{
           color: rgb(174, 171, 171);
         }
