@@ -4,15 +4,20 @@
   gap: 40px;
   padding: 0px 10%;
     background-color: $main-back-color;
-
-  img {
-    width: 100%;
-  }
+    img{
+      transition: 0.2s ease-in-out;
+      width: 100%;
+    }
+    img:hover{
+      box-shadow: -5px -5px rgba(107, 147, 154, 0.492);
+      transform: skew(-2deg) scaleY(0.95);
+    }
   &-card {
     background-color: $white;
     width: 100%;
     justify-items: center;
     flex-wrap: wrap;
+
     &-noImgBox{
       padding: 10px;
       display: flex;
@@ -20,6 +25,9 @@
       h2{
         font-size: calc(15px + 1vw);
         margin-bottom: 10px;
+        &:hover{
+        transform: skew(-10deg) scaleY(0.95);
+        }
       }
       p{
         letter-spacing: 1px;

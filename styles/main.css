@@ -4,6 +4,10 @@
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 .header {
   padding: 20px 10%;
   display: flex;
@@ -13,6 +17,7 @@
   border-bottom: 1px solid rgba(128, 128, 128, 0.316);
 }
 .header-ul {
+  animation: moveInContact 2s;
   display: flex;
   gap: 20px;
 }
@@ -24,10 +29,38 @@
 }
 .header-img {
   width: 350px;
+  animation: moveInCort 10s infinite;
 }
 
+@keyframes moveInCort {
+  0% {
+    transform: translateX(-200%);
+  }
+  20% {
+    transform: translateX(0);
+  }
+  80% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+@keyframes moveInContact {
+  0% {
+    transform: rotate(90deg);
+    transform-origin: top right;
+  }
+  100% {
+    transform: rotate(0deg);
+    transform-origin: top right;
+  }
+}
 .main-nav {
   background-color: white;
+  transform: translateX(-100%);
+  animation: moveIn 3s forwards;
+  animation-delay: 2s;
 }
 .main-nav ul {
   padding: 0px 10%;
@@ -36,6 +69,11 @@
   justify-content: space-between;
   align-items: center;
   font-size: calc(10px + 0.3vw);
+  animation: spacing 3s ease-in-out;
+  animation-delay: 2s;
+}
+.main-nav ul a {
+  color: black;
 }
 .main-nav-li {
   display: block;
@@ -48,6 +86,7 @@
   text-align: center;
   color: rgb(255, 255, 191);
   border: 1px solid rgba(255, 255, 0, 0.372);
+  transition: 1s ease-in-out;
 }
 .main-nav-li i {
   font-size: calc(24px + 0.5vw);
@@ -77,7 +116,34 @@
   font-size: calc(14px + 0.3vw);
   color: rgb(255, 255, 191);
 }
+.main-offer button:hover {
+  animation: pading 0.3s ease-in-out;
+}
 
+@keyframes moveIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes pading {
+  50% {
+    padding: 0px 3%;
+  }
+  100% {
+    padding: 0px 1%;
+  }
+}
+@keyframes spacing {
+  0% {
+    justify-content: center;
+  }
+  70% {
+    justify-content: center;
+  }
+}
 .gallery {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -86,7 +152,12 @@
   background-color: #efefef;
 }
 .gallery img {
+  transition: 0.2s ease-in-out;
   width: 100%;
+}
+.gallery img:hover {
+  box-shadow: -5px -5px rgba(107, 147, 154, 0.492);
+  transform: skew(-2deg) scaleY(0.95);
 }
 .gallery-card {
   background-color: white;
@@ -102,6 +173,9 @@
 .gallery-card-noImgBox h2 {
   font-size: calc(15px + 1vw);
   margin-bottom: 10px;
+}
+.gallery-card-noImgBox h2:hover {
+  transform: skew(-10deg) scaleY(0.95);
 }
 .gallery-card-noImgBox p {
   letter-spacing: 1px;

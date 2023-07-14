@@ -1,6 +1,9 @@
 .main {
   &-nav {
-    background-color: $white;
+  background-color: $white;
+  transform: translateX(-100%);
+  animation: moveIn 3s forwards;
+  animation-delay: 2s;
     ul {
       padding: 0px 10%;
       height: 60px;
@@ -8,6 +11,11 @@
       justify-content: space-between;
       align-items: center;
       font-size: calc(10px + 0.3vw);
+      animation: spacing 3s ease-in-out;
+      animation-delay: 2s;
+      a{
+        color: black;
+      }
     }
     &-li {
       display: block;
@@ -20,6 +28,7 @@
       text-align: center;
       color: $yellow;
       border: 1px solid rgba(255, 255, 0, 0.372);
+      transition: 1s ease-in-out;
       i {
         font-size: calc(24px + 0.5vw);
       }
@@ -49,5 +58,33 @@
       font-size: calc(14px + 0.3vw);
       color: $yellow;
     }
+    button:hover{
+    animation: pading 0.3s ease-in-out;
+    }
+  }
+}
+@keyframes moveIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes pading {
+  50% {
+    padding: 0px 3%;
+  }
+  100% {
+    padding:0px  1%;
+  }
+}
+
+@keyframes spacing {
+  0% {
+    justify-content: center;
+  }
+  70% {
+    justify-content: center;
   }
 }

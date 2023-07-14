@@ -1,21 +1,50 @@
-.header{
+.header {
   padding: 20px 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: $header-back-color;
   border-bottom: 1px solid $border-color;
-  &-ul{
+  &-ul {
+    animation: moveInContact 2s ;
     display: flex;
     gap: 20px;
-    li{
+    li {
       font-size: calc(10px + 0.5vw);
     }
-    .last-li{
+    .last-li {
       font-size: calc(15px + 0.5vw);
+      
     }
   }
-&-img{
-  width: 350px;
+  &-img {
+    width: 350px;
+  animation: moveInCort 10s infinite;
+
+  }
 }
+
+@keyframes moveInCort {
+  0% {
+    transform: translateX(-200%);
+  }
+  20% {
+    transform: translateX(0);
+  }
+  80%{
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+@keyframes moveInContact {
+  0% {
+    transform: rotate(90deg);
+    transform-origin: top right;
+  }
+  100% {
+    transform: rotate(0deg);
+    transform-origin: top right;
+  }
 }
