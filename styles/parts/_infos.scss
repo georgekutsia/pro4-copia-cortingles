@@ -4,6 +4,10 @@
   &-img{
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    img{
+      width: 33%;
+    }
   }
   &-link{
     display: flex;
